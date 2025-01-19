@@ -12,7 +12,7 @@ function Contact() {
       <div className="contact-container">
         <div className="email-section">
           <p className="contact-text">Get in touch</p>
-          <a href="mailto:[your-email]" className="email-link">
+          <a href="mailto:haykvadan@gmail.com" className="email-link">
             <FaEnvelope className="email-icon" />
             <span className="highlight-green">haykvadan@gmail.com</span>
           </a>

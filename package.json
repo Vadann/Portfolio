@@ -1,7 +1,7 @@
 {
+  "homepage": "https://vadann.github.io/hayk",
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Vadann.github.io/hayk",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",

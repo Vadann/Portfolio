@@ -18,3 +18,62 @@
   margin-bottom: 2rem;
   color: var(--text-secondary);
 } 
+
+.name-text {
+    font-size: 1.5rem;
+    display: inline-block;
+    animation: bubbleEffect 2s ease-in-out infinite;
+  }
+  
+  @keyframes bubbleEffect {
+    0% {
+      transform: scale(1);
+      filter: brightness(1);
+    }
+    50% {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+      text-shadow: 0 0 10px var(--accent);
+    }
+    100% {
+      transform: scale(1);
+      filter: brightness(1);
+    }
+  }
+
+/* General highlight animation */
+.highlight-green, .highlight-purple, .highlight-pink, .highlight-yellow {
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Subtle glow effect */
+.highlight-green {
+  text-shadow: 0 0 8px rgba(var(--accent-rgb), 0.3);
+}
+
+.highlight-purple {
+  text-shadow: 0 0 8px rgba(149, 76, 233, 0.3);
+}
+
+.highlight-pink {
+  text-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+}
+
+.highlight-yellow {
+  text-shadow: 0 0 8px rgba(255, 223, 0, 0.3);
+}
+
+/* Make the typed text slightly larger */
+.typed-element {
+  font-size: 1.2rem;
+}
+
+.name-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}

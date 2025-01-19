@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import { FaGithub } from 'react-icons/fa';  // First run: npm install react-icons
+import { FaGithub } from 'react-icons/fa';
 
 function Projects() {
   const projects = [
@@ -25,7 +25,7 @@ function Projects() {
   ];
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h2>projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (

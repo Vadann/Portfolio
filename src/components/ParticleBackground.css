@@ -12,9 +12,9 @@
   position: absolute;
   border-radius: 50%;
   animation: floatParticle linear infinite;
+  will-change: transform;
 }
 
-/* Large particles */
 .particle.large {
   width: 5px;
   height: 5px;
@@ -22,7 +22,6 @@
   opacity: 0.3;
 }
 
-/* Medium particles */
 .particle.medium {
   width: 3px;
   height: 3px;
@@ -30,7 +29,6 @@
   opacity: 0.2;
 }
 
-/* Small particles */
 .particle.small {
   width: 2px;
   height: 2px;
@@ -54,4 +52,4 @@
   100% {
     transform: translate(0, 0);
   }
-} 
+}

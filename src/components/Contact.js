@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 import { FaGithub, FaLinkedin, FaDiscord, FaEnvelope } from 'react-icons/fa';
 
 function Contact() {
+  const [showCopied, setShowCopied] = useState(false);
+
   return (
     <section className="contact" id="contact">
       <h2>contact</h2>
@@ -12,7 +14,7 @@ function Contact() {
           <p className="contact-text">Get in touch</p>
           <a href="mailto:[your-email]" className="email-link">
             <FaEnvelope className="email-icon" />
-            <span className="highlight-green">[your-email]</span>
+            <span className="highlight-green">haykvadan@gmail.com</span>
           </a>
         </div>
 
@@ -23,15 +25,20 @@ function Contact() {
               <a href="https://github.com/Vadann" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <FaGithub />
               </a>
-              <a href="[your-linkedin-url]" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <a href="https://www.linkedin.com/in/haykvardapetyan/" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <FaLinkedin />
               </a>
-              <a href="#" className="social-icon" onClick={(e) => {
-                e.preventDefault();
-                navigator.clipboard.writeText('[your-discord-username]');
-              }}>
-                <FaDiscord />
-              </a>
+              <div className="discord-wrapper">
+                <a href="#" className="social-icon" onClick={(e) => {
+                  e.preventDefault();
+                  navigator.clipboard.writeText('vadannn');
+                  setShowCopied(true);
+                  setTimeout(() => setShowCopied(false), 2000);
+                }}>
+                  <FaDiscord />
+                </a>
+                {showCopied && <span className="copied-message">Copied!</span>}
+              </div>
             </div>
           </div>
         </div>

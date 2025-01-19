@@ -2,7 +2,7 @@ import React from 'react';
 import './ParticleBackground.css';
 
 function ParticleBackground() {
-  // Large particles (fewer, more prominent)
+  // Large particles
   const largeParticles = Array.from({ length: 15 }, (_, i) => (
     <div 
       key={`large-${i}`} 
@@ -10,7 +10,7 @@ function ParticleBackground() {
       style={{
         left: `${Math.random() * 100}%`,
         top: `${Math.random() * 100}%`,
-        animationDuration: `${Math.random() * 15 + 20}s`, // Slower
+        animationDuration: `${Math.random() * 15 + 20}s`,
         animationDelay: `${Math.random() * 5}s`
       }}
     />
@@ -24,13 +24,13 @@ function ParticleBackground() {
       style={{
         left: `${Math.random() * 100}%`,
         top: `${Math.random() * 100}%`,
-        animationDuration: `${Math.random() * 15 + 15}s`, // Slower
+        animationDuration: `${Math.random() * 15 + 15}s`,
         animationDelay: `${Math.random() * 5}s`
       }}
     />
   ));
 
-  // Small particles (more numerous, less visible)
+  // Small particles
   const smallParticles = Array.from({ length: 35 }, (_, i) => (
     <div 
       key={`small-${i}`} 
@@ -38,7 +38,7 @@ function ParticleBackground() {
       style={{
         left: `${Math.random() * 100}%`,
         top: `${Math.random() * 100}%`,
-        animationDuration: `${Math.random() * 15 + 10}s`, // Slower
+        animationDuration: `${Math.random() * 15 + 10}s`,
         animationDelay: `${Math.random() * 5}s`
       }}
     />

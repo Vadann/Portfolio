@@ -1,37 +1,76 @@
-:root {
-  --primary-color: #2d3436;
-  --secondary-color: #0984e3;
-  --background-color: #f8f9fa;
-  --card-background: #ffffff;
-  --text-color: #2d3436;
-  --transition: all 0.3s ease;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  color: var(--text-color);
-  line-height: 1.6;
-  background-color: var(--background-color);
+:root {
+  --background: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
+  --accent: #64ffda;
+  --accent-purple: #bd93f9;
+  --accent-pink: #ff79c6;
+  --accent-yellow: #f1fa8c;
+  --card-bg: #111111;
+  --hover-color: #64ffda;
+  --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .App {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
   min-height: 100vh;
-}
-
-section {
-  padding: 6rem 2rem;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 80px; /* Add space for fixed header */
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
 h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.highlight-green {
+  color: var(--accent);
+}
+
+.highlight-purple {
+  color: var(--accent-purple);
+}
+
+.highlight-pink {
+  color: var(--accent-pink);
+}
+
+.highlight-yellow {
+  color: var(--accent-yellow);
 }

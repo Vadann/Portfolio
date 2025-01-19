@@ -6,20 +6,22 @@ function About() {
     <section className="about">
       <h2>about me</h2>
       <p>
-        [Your intro] @ [Your school/work]. i do [your specialties]
+        hi, i'm <span className="highlight-green">[your name]</span>. 
+        i'm a <span className="highlight-purple">[your role]</span> based in <span className="highlight-pink">[your location]</span>.
       </p>
       
       <h2>programming</h2>
       <p>
-        i'm best at [your primary languages] but i'm learning [languages you're learning]
+        i specialize in <span className="highlight-yellow">[your specialty]</span> and 
+        <span className="highlight-purple"> [your focus area]</span>
       </p>
       
       <h2>tech stack</h2>
       <p>
-        frontend: [your frontend tech]<br/>
-        backend: [your backend tech]<br/>
-        platforms: [your platforms]<br/>
-        databases: [your databases]
+        frontend: <span className="highlight-pink">[your frontend skills]</span><br/>
+        backend: <span className="highlight-green">[your backend skills]</span><br/>
+        databases: <span className="highlight-yellow">[your databases]</span><br/>
+        tools: <span className="highlight-purple">[your tools]</span>
       </p>
     </section>
   );

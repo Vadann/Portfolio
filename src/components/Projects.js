@@ -4,12 +4,23 @@ import './Projects.css';
 function Projects() {
   const projects = [
     {
-      title: "Project Name",
-      tech: "Tech1, Tech2, Tech3",
-      description: "Brief project description goes here",
-      link: "#"
+      title: "InsightWrite",
+      tech: ["python", "django", "railway"],
+      description: "A journaling web application with integrated mood tracking, calendar, and motivational features.",
+      link: "https://github.com/Vadann/InsightWrite"
     },
-    // Add more projects...
+    {
+      title: "DreamScripts Automation",
+      tech: ["java", "dreambot api", "automation"],
+      description: "An automation software with multiboxing capabilities, featuring dynamic item processing and advanced crafting systems.",
+      link: "https://github.com/Vadann/DreamScripts"
+    },
+    {
+      title: "Movie Recommendation System",
+      tech: ["python", "pandas", "scikit-learn", "streamlit"],
+      description: "A movie recommendation system utilizing TMDB API and Kaggle dataset to suggest films based on user preferences and viewing history.",
+      link: "https://github.com/Vadann/Movie-Recommender"
+    }
   ];
 
   return (
@@ -17,9 +28,15 @@ function Projects() {
       <h2>projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <a href={project.link} className="project-card" key={index}>
+          <a href={project.link} className="project-card" key={index} target="_blank" rel="noopener noreferrer">
             <h3>{project.title}</h3>
-            <p className="tech">{project.tech}</p>
+            <p className="tech">
+              {project.tech.map((tech, i) => (
+                <span key={i} className={`highlight-${i % 3 === 0 ? 'green' : i % 3 === 1 ? 'purple' : 'pink'}`}>
+                  {tech}{i !== project.tech.length - 1 ? ' · ' : ''}
+                </span>
+              ))}
+            </p>
             <p className="description">{project.description}</p>
           </a>
         ))}
@@ -28,4 +45,4 @@ function Projects() {
   );
 }
 
-export default Projects; 
+export default Projects;

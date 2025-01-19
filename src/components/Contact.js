@@ -43,6 +43,45 @@ function Contact() {
           </div>
         </div>
       </div>
+
+      {/* New Contact Form */}
+      {/*
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-group">
+          <input
+            type="text"
+            name="name"
+            placeholder="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        
+        <div className="form-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        
+        <div className="form-group">
+          <textarea
+            name="message"
+            placeholder="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+        </div>
+        
+        <button type="submit" className="submit-btn">send message</button>
+      </form>
+      */}
     </section>
   );
 }

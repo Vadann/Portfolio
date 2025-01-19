@@ -1,5 +1,6 @@
 import React from 'react';
 import './Projects.css';
+import { FaGithub } from 'react-icons/fa';  // First run: npm install react-icons
 
 function Projects() {
   const projects = [
@@ -29,7 +30,10 @@ function Projects() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <a href={project.link} className="project-card" key={index} target="_blank" rel="noopener noreferrer">
-            <h3>{project.title}</h3>
+            <div className="card-header">
+              <h3>{project.title}</h3>
+              <FaGithub className="github-icon" />
+            </div>
             <p className="tech">
               {project.tech.map((tech, i) => (
                 <span key={i} className={`highlight-${i % 3 === 0 ? 'green' : i % 3 === 1 ? 'purple' : 'pink'}`}>
@@ -45,4 +49,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Projects; 

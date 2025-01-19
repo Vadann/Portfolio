@@ -18,6 +18,24 @@
   border-color: var(--accent);
 }
 
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.github-icon {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.project-card:hover .github-icon {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
 .project-card h3 {
   color: var(--text-primary);
   margin-bottom: 0.5rem;
@@ -39,4 +57,4 @@
 .project-card .description {
   color: var(--text-secondary);
   font-size: 0.9rem;
-}
+} 

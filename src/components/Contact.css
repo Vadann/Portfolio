@@ -1,1 +1,90 @@
- 
+.contact {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.contact-text {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.email-section, .social-section {
+  text-align: center;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.email-icon {
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.email-link:hover .email-icon {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+.social-container {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  border: 1px solid var(--text-secondary);
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.social-container:hover {
+  border-color: var(--accent);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+}
+
+.social-icon:hover {
+  color: var(--accent);
+  transform: scale(1.4);
+}
+
+/* Neighboring icons effect */
+.social-icon:hover + .social-icon {
+  transform: scale(1.2);
+}
+
+/* Previous sibling effect */
+.social-icon:has(+ .social-icon:hover) {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+} 

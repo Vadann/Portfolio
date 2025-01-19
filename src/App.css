@@ -8,13 +8,9 @@
   --background: #000000;
   --text-primary: #ffffff;
   --text-secondary: #888888;
-  --accent: #64ffda;
-  --accent-purple: #bd93f9;
-  --accent-pink: #ff79c6;
-  --accent-yellow: #f1fa8c;
+  --accent: #3498db;
   --card-bg: #111111;
-  --hover-color: #64ffda;
-  --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --hover-color: #2980b9;
 }
 
 .App {
@@ -57,20 +53,4 @@ p {
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 1rem;
-}
-
-.highlight-green {
-  color: var(--accent);
-}
-
-.highlight-purple {
-  color: var(--accent-purple);
-}
-
-.highlight-pink {
-  color: var(--accent-pink);
-}
-
-.highlight-yellow {
-  color: var(--accent-yellow);
 }

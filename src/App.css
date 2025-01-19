@@ -1,8 +1,10 @@
 :root {
   --primary-color: #2d3436;
   --secondary-color: #0984e3;
-  --background-color: #ffffff;
+  --background-color: #f8f9fa;
+  --card-background: #ffffff;
   --text-color: #2d3436;
+  --transition: all 0.3s ease;
 }
 
 * {
@@ -15,6 +17,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
   line-height: 1.6;
+  background-color: var(--background-color);
 }
 
 .App {
@@ -22,7 +25,7 @@ body {
 }
 
 section {
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }

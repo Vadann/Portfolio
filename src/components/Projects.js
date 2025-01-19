@@ -4,31 +4,24 @@ import './Projects.css';
 function Projects() {
   const projects = [
     {
-      title: 'Project 1',
-      description: 'Description of project 1',
-      githubLink: 'https://github.com/yourusername/project1',
-      technologies: ['React', 'Node.js']
+      title: "Project Name",
+      tech: "Tech1, Tech2, Tech3",
+      description: "Brief project description goes here",
+      link: "#"
     },
-    // Add more projects here
+    // Add more projects...
   ];
 
   return (
-    <section id="projects" className="projects">
-      <h2>Projects</h2>
+    <section className="projects">
+      <h2>projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
+          <a href={project.link} className="project-card" key={index}>
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="technologies">
-              {project.technologies.map((tech, i) => (
-                <span key={i} className="tech-tag">{tech}</span>
-              ))}
-            </div>
-            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-              View on GitHub
-            </a>
-          </div>
+            <p className="tech">{project.tech}</p>
+            <p className="description">{project.description}</p>
+          </a>
         ))}
       </div>
     </section>

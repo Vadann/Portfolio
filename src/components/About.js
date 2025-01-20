@@ -36,6 +36,11 @@ function About() {
         based in <span className="highlight-pink">Los Angeles, CA</span>.
       </p>
       
+      <p>
+        i'm passionate about <span className="highlight-yellow">full-stack development</span> and 
+        <span className="highlight-purple"> machine learning</span>, always eager to learn and build innovative solutions.
+      </p>
+      
       <h2>programming</h2>
       <p>
         i'm best at <span className="highlight-green">Python</span>, 

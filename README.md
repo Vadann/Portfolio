@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This website showcases my projects, sk
 🚀 [Visit My Portfolio](https://vadann.github.io/hayk/)
 
 ## Built with React <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="30" height="30" />
-This portfolio is built using React, leveraging its powerful features for a smooth and interactive user experience.
+This portfolio is built using React
 
 ## About
 This portfolio is built using:

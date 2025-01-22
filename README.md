@@ -24,5 +24,5 @@ This portfolio is built using:
 ## Contact
 Feel free to reach out to me through:
 - Email: haykvadan@gmail.com
-- LinkedIn: [Hayk Vardapetyan](https://www.linkedin.com/in/hayk-vardapetyan-b2b6b7251/)
+- LinkedIn: [Hayk Vardapetyan](https://www.linkedin.com/in/haykvardapetyan/)
 - GitHub: [Vadann](https://github.com/Vadann)
